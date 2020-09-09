@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,#c70039, #0f3460);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  position: relative;
+}
+
+.nav-item {
+  padding:0 15px;
+}
+
+.back-color {
+    background-color: #00334e;
+}
+
+.head{
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-box {
+    padding: 50px;
+}
+
+.logo {
+  width: 80%;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveLeft {
+
+   0% {
+     opacity: 0;
+     transform: translateX(40px);
+   }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRight {
+
+   0% {
+     opacity: 0;
+     transform: translateX(-40px);
+   }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.heading {
+  font-family: 'Calistoga', cursive;
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  animation-name: moveRight;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+/* Monday */
+
+.monday {
+  padding:50px 50px;
+}
+
+.packed {
+  padding-top: 50px;
+}
+
+.card-title {
+  padding: 5px;
+}
+
+.code {
+  padding:5px;
+}
